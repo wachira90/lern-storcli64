@@ -14,21 +14,19 @@
 
 StorCLI เป็นเครื่องมือของ Broadcom/LSI สำหรับจัดการ RAID controllers (LSI MegaRAID)
 
-1. ไปที่เว็บ Broadcom (เดิม LSI) สำหรับ MegaRAID StorCLI:
+1. Clone StorCLI:
 
-   * URL ล่าสุด (เช็คจาก Broadcom): [https://www.broadcom.com/support/download-search](https://www.broadcom.com/support/download-search)
-   * ค้นหา `StorCLI` หรือ `MegaRAID Storage Manager (MSM)`
+   * git clone https://github.com/wachira90/lern-storcli64.git
 
 2. เลือกเวอร์ชันที่ตรงกับระบบปฏิบัติการของคุณ
 
-   * Linux: จะได้ไฟล์ `storcli-x.x.x.tar.gz` หรือ `storcli-xx.x.x-linux-x86_64.tar.gz`
-   * Windows: จะได้ไฟล์ `.zip`
+   * `cd lern-storcli64`
+   * Linux: `cd Linux`
+   * Windows: `cd Windows`
 
 3. ติดตั้งบน Linux:
 
    ```bash
-   tar -zxvf storcli-xx.x.x-linux-x86_64.tar.gz
-   cd storcli-xx.x.x-linux-x86_64
    chmod +x storcli64
    sudo mv storcli64 /usr/local/bin/
    ```
